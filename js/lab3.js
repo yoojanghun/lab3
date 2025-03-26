@@ -8,6 +8,10 @@ var carouselId = document.getElementById('carousel-id');
 var productId = document.getElementById('product-id');
 var profileId = document.getElementById('profile-id');
 
+const open = document.querySelector("#open");
+const modalBox = document.querySelector("#modal-box");
+const close = document.querySelector("#close");
+
 petId.onclick = function() {
 pet.style.display = "block";
 carousel.style.display = "none";
@@ -53,6 +57,16 @@ document.querySelectorAll(".caption").forEach(caption => {
     this.classList.toggle("is-fixed"); // this를 사용하여 현재 클릭된 요소에 클래스 추가/제거
   });
 });
+
+open.addEventListener("click", () => {
+  modalBox.classList.toggle("active"); // 클릭하면 클래스리스트에 .active 스타일 추가
+});
+
+close.addEventListener("click", () => {
+  modalBox.classList.toggle("active"); // 클릭하면 클래스리스트에 .active 스타일 추가
+});
+
+
 productId.onclick = function() {
   pet.style.display = "none";
   carousel.style.display = "none";

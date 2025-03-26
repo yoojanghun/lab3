@@ -188,13 +188,19 @@ header a:hover {
   border:none;
   border-radius:5px;
   padding:15px;
+  cursor: pointer;
 }
 
 #profile #modal-box {
-  position:relative;
-  top:200px;
-  margin:0 auto;
-  width:500px;
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background-color: rgba(0,0,0,0.6);
+  display:none;
+  justify-content: center;
+  align-items: center;
 }
 
 #profile #modal-box.active {
@@ -211,7 +217,7 @@ header a:hover {
 }
 
 #profile #modal-contents button {
-  position: relative;
+  position:absolute;
   width:20px;
   height:20px;
   top:30px;
@@ -223,6 +229,7 @@ header a:hover {
   font-size:20px;
   border:none;
   outline:none;
+
 }
 
 #profile h1 {
