@@ -48,7 +48,11 @@ arrows.forEach( arrow => {
   });
 });
 
-
+document.querySelectorAll(".caption").forEach(caption => {
+  caption.addEventListener("click", function() {
+    this.classList.toggle("is-fixed"); // this를 사용하여 현재 클릭된 요소에 클래스 추가/제거
+  });
+});
 productId.onclick = function() {
   pet.style.display = "none";
   carousel.style.display = "none";
