@@ -28,23 +28,23 @@ var slides = document.querySelectorAll("#slides > img");
 var slides2 = document.querySelector("#slides");
 
 let current = 0;  // 배열 인덱스
-slides2.style.left = -current*600 + "px";
+slides2.style.top = -current*300 + "px";
 
 arrows.forEach( arrow => {
   arrow.addEventListener("click", (e) => {
-    if(e.target.id === "left") {  // 왼쪽 화살표 클릭?
+    if(e.target.id === "top") {  // 왼쪽 화살표 클릭?
       current--; // 이전 이미지로 이동
       if (current < 0) {  // 첫번째 이미지?
         current = slides.length - 1;  // 맨 마지막 이미지로 이동
       }      
     }
-    else if (e.target.id == "right") {  // 오른쪽 화살표 클릭?
+    else if (e.target.id == "bottom") {  // 오른쪽 화살표 클릭?
       current++;  // 다음 이미지로 이동
       if ( current >= slides.length ) {  // 마지막 이미지?
         current = 0;  // 첫번째 이미지로 이동
       }
     }
-    slides2.style.left = -current*600 + "px";
+    slides2.style.top = -current*300 + "px";
   });
 });
 

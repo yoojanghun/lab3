@@ -94,26 +94,31 @@ header a:hover {
   transition: all 1.5s ease-in-out;  /* 나타날 때 부드럽게 트랜지션 추가 */
 }
 #carousel #slides > img {
+  display: flex;
+  flex-direction: column;
   width:600px; /*100%;  /* 너비 */
-  float:left;  /* 가로로 배치 */
+  height: 300px;
 }
 
 #carousel .arrow {
   position: absolute;
   z-index:100;
-  font-size:2em;
+  font-size:1.3em;
   padding:10px;
   background:#ddd;
   color:#222;
   opacity:0.3;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
 }
-#carousel #left {
-  top:120px;
-  left:0;  /* 왼쪽으로 붙여서 */ 
+#carousel #top {
+  top:0;
+  left:275px;  
 }
-#carousel #right {
-  top:120px;
-  right:0;  /* 오른쪽으로 붙여서 */ 
+#carousel #bottom {
+  bottom: 0;
+  left: 275px;
 }
 
 #carousel .arrow:hover {
