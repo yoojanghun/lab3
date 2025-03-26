@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 기법 소개 사이트</title>
+	<link rel="stylesheet" href="css/lab3.css">
+</head>
+
+<body>
+<header>
+  <h1>CSS 기법 소개 사이트</h1>
+  <nav>
+    <div id="menu">
+    <ul>
+        <li><a href="#" id="pet-id">애완동물</a></li>
+        <li><a href="#" id="carousel-id">카루셀</a></li>
+        <li><a href="#" id="product-id">상품소개</a></li>
+        <li><a href="#" id="profile-id">프로필</a></li>
+        <li><a href="#" id="service1-id">추가기능1</a></li>
+        <li><a href="#" id="service2-id">추가기능2</a></li>
+        <li><a href="#" id="service3-id">추가기능3</a></li>
+        <li><a href="#" id="service4-id">추가기능4</a></li>
+        <li><a href="#" id="service5-id">추가기능5</a></li>
+    </ul>
+    </div>
+  </nav>
+</header>
+
+<div id="pet" style="display:block">
+<section>
+  <article class="at1">  
+    <h3>강아지 집 </h3>
+    <p>강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는 박음질이 잘 되어 있는지, 세탁이 간편한 제품인지 꼭 확인하시고 고르시는 것이 좋습니다.</p>
+  </article>
+  <article class="at2"> 
+    <h3>강아지 먹이 </h3>
+    <p>강아지의 먹이는 꼭 어린 강아지용으로 나와있는 사료를 선택하세요. 강아지들은 사람에 비해 성장속도가 8배정도 빠르답니다. 따라서 강아지에게는 성장속도에 맞는 사료를 급여하셔야 합니다. 사람이 먹는 음식을 먹게 되면 양념과 향신료에 입맛이 익숙해지고, 비만이 될 가능성이 매우 높아집니다. 강아지용 사료는 생후 12개월까지 급여하셔야 합니다.</p>
+  </article>
+  <article class="at3"> 
+    <h3>밥그릇, 물병 </h3>
+    <p>밥그릇은 쉽게 넘어지지 않도록 바닥이 넓은 것이 좋습니다.물병은 대롱이 달린 것으로 선택하세요. 밥그릇에 물을 주게 되면 입 주변에 털이 모두 젖기 때문에 비위생적이므로 대롱을 통해서 물을 먹을 수 있는 물병을 마련하시는 것이 좋습니다.</p>
+  </article>
+  <article class="at4"> 
+    <h3>이름표, 목줄</h3> 
+    <p>강아지를 잃어버릴 염려가 있으니 산책할 무렵이 되면 이름표를 꼭 목에 걸어주도록 하세요. 그리고 방울이 달린 목걸이를 하고자 하실 때는 신중하셔야 합니다. 움직일 때마다 방울이 딸랑 거리면 신경이 예민한 강아지들에게는 좋지 않은 영향을 끼칠 수 있기 때문입니다.</p>
+  </article>
+  <footer>
+	<p>애완동물 신문사 소개 및 연락처</p>
+  </footer>
+ </section>
+</div>
+
+<div id="carousel" style="display:none">
+  <p>좌우 화살표를 눌러 보세요</p>
+
+  <div id="slideShow">
+    <div id="slides">
+      <img src="images/pic-1.jpg" alt="">
+      <img src="images/pic-2.jpg" alt="">
+      <img src="images/pic-3.jpg" alt="">
+      <img src="images/pic-4.jpg" alt="">
+      <img src="images/pic-5.jpg" alt="">
+      <img src="images/pic-6.jpg" alt="">
+    </div>
+    <div class="arrow" id="left">&lang;</div>
+    <div class="arrow" id="right">&rang;</div>
+  </div>
+
+</div>
+
+<div id="product" style="display:none">
+  <h1>신상품 목록</h1>
+  <ul class="prod-list">
+    <li>
+      <img src="images/prod1.jpg">
+      <div class="caption">
+        <h2>상품 1</h2>
+        <p>상품 1 설명 텍스트</p>
+        <p>가격 : 12,345원</p>
+      </div>
+    </li>
+    <li>
+      <img src="images/prod2.jpg">
+      <div class="caption">
+        <h2>상품 2</h2>
+        <p>상품 2 설명 텍스트</p>
+        <p>가격 : 12,345원</p>
+      </div>
+    </li>
+    <li>
+      <img src="images/prod3.jpg">
+      <div class="caption">
+        <h2>상품 3</h2>
+        <p>상품 3 설명 텍스트</p>
+        <p>가격 : 12,345원</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div id="profile" style="display:none">
+	<button id="open">프로필 보기</button>
+	<div id="modal-box">
+	  <div id="modal-contents">
+		<button id="close">&times;</button>
+		<h1 id="title">My Profile</h1>
+		<div id="dprofile">
+		  <img src="images/pf.png" alt="도레미">
+		  <div id="desc">
+			<p class="user">이름 : 도레미</p>
+			<p class="user">주소 : somewhere</p>
+			<p class="user">연락처 : 1234-5678</p>
+		  </div>
+		</div>
+	  </div>
+	</div>  
+</div>
+
+<script src="js/lab3.js"></script>
+
+</body>
+
+ </body>
+</body>
+</html>
